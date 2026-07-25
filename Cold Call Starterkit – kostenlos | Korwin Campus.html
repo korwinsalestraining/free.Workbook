@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===================================================================
+     HIER ANPASSEN — die einzigen Stellen, die du ändern musst
+     =================================================================== -->
+<title>Cold Call Starterkit – kostenlos | Korwin Campus</title>
+<meta name="description" content="Dein Leitfaden in 7 Schritten: Gesprächsstruktur, Opener-Vorlagen, Gatekeeper-Sätze und der 100-Anrufe-Tracker. Kostenlos vom Korwin Campus.">
+
+<!-- LinkedIn- / Social-Vorschau (URL nach dem Deploy eintragen) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Das Cold Call Starterkit – kostenlos">
+<meta property="og:description" content="7 Schritte vom ersten Klingeln zum Termin. Mit Opener-Vorlagen, Gatekeeper-Sätzen und dem 100-Anrufe-Tracker.">
+<meta property="og:image" content="https://korwinsalestraining.github.io/free.Workbook/linkedin-preview.png">
+<meta property="og:url" content="https://korwinsalestraining.github.io/free.Workbook/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,540&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --espresso:#211D18; --bernstein:#B8793A; --bernstein-tief:#A66C31;
+  --offwhite:#F7F5F0; --offwhite-warm:#F3EEE4; --creme:#F1EEE7;
+  --body:#5E6570; --warmgrau:#9A9186; --haarlinie:#E6E1D6;
+  --maxw:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",system-ui,sans-serif;color:var(--body);background:var(--offwhite);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+@media(max-width:720px){section{padding:56px 0}}
+
+.kicker{font-weight:800;font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--bernstein-tief)}
+h1,h2{font-family:"Anton",sans-serif;text-transform:uppercase;color:var(--espresso);letter-spacing:.5px;font-weight:400}
+h1{font-size:clamp(34px,5.4vw,58px);line-height:1.02}
+h2{font-size:clamp(24px,3.4vw,34px);line-height:1.08}
+.hl{color:var(--bernstein)}
+.claim{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:540;color:var(--bernstein);
+  font-size:clamp(16px,2.1vw,20px);line-height:1.45}
+.att{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--warmgrau);margin-top:8px}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--bernstein);color:var(--espresso);
+  border:none;border-radius:8px;padding:16px 34px;font-family:"Inter",sans-serif;font-weight:700;
+  font-size:14px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;cursor:pointer;
+  transition:background .18s ease}
+.btn:hover,.btn:focus-visible{background:var(--bernstein-tief)}
+.btn-ghost{background:transparent;border:1px solid var(--bernstein);color:var(--bernstein)}
+.btn-ghost:hover{background:rgba(184,121,58,.12)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--bernstein);outline-offset:3px}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--espresso);color:var(--offwhite-warm);padding:34px 0 84px}
+.logo{font-family:"Anton",sans-serif;font-size:17px;text-transform:uppercase;color:var(--offwhite-warm)}
+.logo .win{color:var(--bernstein)}
+.logo small{font-family:"Inter";font-weight:700;font-size:9px;letter-spacing:2.2px;margin-left:8px;
+  padding-left:9px;border-left:1px solid rgba(243,238,228,.35);vertical-align:2px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;margin-top:76px}
+.hero h1{color:var(--offwhite)}
+.hero .pill{display:inline-block;border:1px solid var(--bernstein);color:var(--bernstein);border-radius:20px;
+  padding:5px 15px;font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.rule{width:118px;height:3px;background:var(--bernstein);margin:22px 0}
+.hero p.lead{color:#CFC9BD;font-size:17px;max-width:430px}
+.hero .claim{margin:18px 0 26px}
+
+/* ---------- Cover-Mockup ---------- */
+.mock-stage{position:relative;width:240px;height:330px;margin:0 auto}
+.mock-stage .sheet{position:absolute;border-radius:9px;width:214px;height:296px}
+.sheet.s2{top:16px;left:20px;background:#2E2822;transform:rotate(7deg)}
+.sheet.s1{top:8px;left:10px;background:#191512;transform:rotate(3.5deg);border:1px solid rgba(184,121,58,.25)}
+.cover{position:absolute;top:0;left:0;width:214px;height:296px;background:var(--espresso);
+  border:1px solid rgba(184,121,58,.5);border-radius:9px;padding:20px 17px;transform:rotate(-2deg);
+  box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.cover .clogo{font-family:"Anton";font-size:10px;color:var(--offwhite-warm)}
+.cover .clogo span{color:var(--bernstein)}
+.cover .ckick{font-size:6.5px;font-weight:800;letter-spacing:1.4px;color:var(--bernstein);margin-top:30px}
+.cover .ctitle{font-family:"Anton";font-size:20px;line-height:1.05;color:var(--offwhite);margin-top:6px}
+.cover .crule{width:36px;height:2px;background:var(--bernstein);margin:10px 0}
+.cover .csub{font-size:7px;color:#CFC9BD;line-height:1.5}
+.cover .cbadge{position:absolute;bottom:13px;left:17px;border:1px solid var(--bernstein);color:var(--bernstein);
+  border-radius:12px;padding:3px 8px;font-size:6px;font-weight:800;letter-spacing:1px}
+.free-badge{position:absolute;bottom:-12px;right:-6px;background:var(--bernstein);color:var(--espresso);
+  border-radius:20px;padding:6px 15px;font-size:11px;font-weight:800;letter-spacing:1px}
+
+/* ---------- Formular ---------- */
+.form-card{background:#FCFBF7;border:1px solid var(--haarlinie);border-radius:12px;padding:28px}
+.checks{list-style:none;margin:14px 0 22px}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-size:15px;margin-bottom:9px}
+.checks li::before{content:"✓";color:var(--bernstein);font-weight:800;line-height:1.5}
+label.f{display:block;font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;
+  color:var(--espresso);margin-bottom:7px}
+input[type=email]{width:100%;border:1px solid var(--haarlinie);border-radius:8px;padding:14px 14px;
+  font-size:15px;font-family:inherit;color:var(--espresso);background:#fff}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;line-height:1.5;margin:14px 0 18px}
+.consent a{color:var(--bernstein-tief)}
+.err{color:var(--bernstein-tief);font-size:13px;font-weight:700;margin-top:10px;display:none}
+.split{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:center}
+
+/* ---------- Zahlen ---------- */
+.stats{background:var(--espresso);color:#CFC9BD}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;text-align:center}
+.stat .n{font-family:"Anton";font-size:clamp(28px,4vw,40px);color:var(--bernstein);
+  font-variant-numeric:tabular-nums;line-height:1}
+.stat .l{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;margin-top:7px}
+
+/* ---------- Über mich / FAQ ---------- */
+.about{background:var(--creme)}
+.about-grid{display:grid;grid-template-columns:200px 1fr;gap:34px;align-items:center;margin-top:22px}
+.photo{width:200px;height:200px;border-radius:14px;object-fit:cover;background:var(--espresso);display:block}
+.faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.faq-card{background:#FCFBF7;border:1px solid var(--haarlinie);border-radius:12px;padding:20px 22px}
+.faq-card h3{font-family:"Anton";font-size:16px;text-transform:uppercase;color:var(--espresso);
+  font-weight:400;letter-spacing:.4px;margin-bottom:7px}
+.faq-card p{font-size:14px}
+
+/* ---------- Danke-Zustand ---------- */
+.thanks{display:none;background:var(--espresso);border-radius:12px;padding:30px;text-align:center}
+.thanks h2{color:var(--offwhite)}
+.thanks p{color:#CFC9BD;margin:10px 0 20px}
+.social{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.social a{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(247,245,240,.3);
+  color:var(--offwhite);border-radius:8px;padding:11px 20px;text-decoration:none;font-size:14px}
+.social a:hover{border-color:var(--bernstein);color:var(--bernstein)}
+
+/* ---------- Footer ---------- */
+footer{background:var(--espresso);color:var(--warmgrau);padding:40px 0;font-size:13px}
+footer a{color:var(--warmgrau);text-decoration:underline}
+footer a:hover{color:var(--bernstein)}
+.foot-flex{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+
+@media(max-width:860px){
+  .hero-grid,.split,.about-grid{grid-template-columns:1fr;gap:34px}
+  .stat-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+  .faq-grid{grid-template-columns:1fr}
+  .about-grid{justify-items:center;text-align:center}
+  .hero p.lead{max-width:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="logo">KOR<span class="win">WIN</span><small>CAMPUS</small></div>
+
+    <div class="hero-grid">
+      <div>
+        <span class="pill">Vom ersten Klingeln zum Termin</span>
+        <h1>Das Cold Call<br><span class="hl">Starterkit</span></h1>
+        <div class="rule"></div>
+        <p class="lead">Dein Leitfaden in 7 Schritten — mit Gesprächsstruktur, Opener-Vorlagen, Gatekeeper-Sätzen und dem 100-Anrufe-Tracker, der deine Quote sichtbar macht.</p>
+        <p class="claim">„Starke Verkäufer werden nicht geboren.<br>Starke Verkäufer werden gemacht!"</p>
+        <p class="att">— Christian Korwin —</p>
+        <p style="margin-top:26px"><a class="btn" href="#holen">Kostenloser Download ↓</a></p>
+      </div>
+
+      <div class="mock-stage">
+        <div class="sheet s2"></div>
+        <div class="sheet s1"></div>
+        <div class="cover">
+          <div class="clogo">KOR<span>WIN</span></div>
+          <div class="ckick">VOM ERSTEN KLINGELN ZUM TERMIN</div>
+          <div class="ctitle">DAS<br>COLD CALL<br><span style="color:#B8793A">STARTERKIT</span></div>
+          <div class="crule"></div>
+          <div class="csub">7 Schritte · Opener-Vorlagen · Gatekeeper-Sätze · 100-Anrufe-Tracker</div>
+          <div class="cbadge">EIN GESCHENK VOM KORWIN CAMPUS</div>
+        </div>
+        <div class="free-badge">100 % KOSTENLOS</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ FORMULAR ============ -->
+<section id="holen">
+  <div class="wrap split">
+    <div>
+      <span class="kicker">Sofort als PDF</span>
+      <h2 style="margin-top:10px">Hol dir das <span class="hl">Starterkit</span></h2>
+      <ul class="checks">
+        <li>7-Schritte-Leitfaden</li>
+        <li>Opener-Vorlagen</li>
+        <li>Gatekeeper-Sätze</li>
+        <li>100-Anrufe-Tracker</li>
+      </ul>
+      <p style="font-size:14px">Kein Abo, keine versteckten Kosten. Du bekommst das PDF direkt im Anschluss.</p>
+    </div>
+
+    <div>
+      <div class="form-card" id="formCard">
+        <form id="leadForm" novalidate
+              action="https://32fe70f7.sibforms.com/serve/MUIFAFMjH9EFt7uvQuHN_3ruvELDjbK3jgyaHVrXtfGuRcN1yDVz1hr8hl7QxyRCLgDqQBv3EXTU-gtrSrPSz55IQobl4v9Ms9k2VWJMBHNZdnOmNDiljK7vOrirlcuVvaUoEMNH8q5HhLzWAbYR_oy1XDOMTMalFeUp2lN1TSR0ZhfOSbYgeQzJn2Jl2RSCddWYz22Ip61WWcNitQ=="
+              method="POST" target="brevoFrame">
+          <label class="f" for="email">E-Mail-Adresse</label>
+          <input type="email" id="email" name="EMAIL" placeholder="deine@email.ch" required autocomplete="email">
+
+          <!-- Brevo-Spamschutz: bleibt leer und unsichtbar -->
+          <input type="text" name="email_address_check" value="" style="display:none" tabindex="-1" aria-hidden="true">
+          <input type="hidden" name="locale" value="de">
+
+          <div class="consent">
+            <input type="checkbox" id="consent" name="OPT_IN" value="1" required>
+            <label for="consent">Ich möchte das Starterkit und weitere Sales-Impulse per E-Mail erhalten. Abmeldung jederzeit möglich. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</label>
+          </div>
+          <button type="submit" class="btn" style="width:100%;justify-content:center">Kostenloser Download</button>
+          <p class="err" id="err"></p>
+        </form>
+        <iframe name="brevoFrame" style="display:none" title="Übermittlung"></iframe>
+      </div>
+
+      <div class="thanks" id="thanks">
+        <h2>Geschafft!</h2>
+        <p>Dein Starterkit liegt bereit. Viel Erfolg beim nächsten Anruf.</p>
+        <a class="btn" id="dlBtn" href="Cold-Call-Starterkit_Korwin.pdf" download>PDF herunterladen</a>
+        <div class="social">
+          <a href="https://www.instagram.com/korwin.salestraining" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/in/christian-k-/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ZAHLEN ============ -->
+<section class="stats">
+  <div class="wrap stat-grid">
+    <div class="stat"><div class="n" data-count="15">0</div><div class="l">Jahre Vertrieb</div></div>
+    <div class="stat"><div class="n" data-count="500">0</div><div class="l">Menschen trainiert</div></div>
+    <div class="stat"><div class="n" data-count="5">0</div><div class="l">Branchen</div></div>
+    <div class="stat"><div class="n" data-count="3">0</div><div class="l">Start-ups skaliert</div></div>
+  </div>
+</section>
+
+<!-- ============ ÜBER MICH ============ -->
+<section class="about">
+  <div class="wrap">
+    <span class="kicker">Über mich</span>
+    <div class="about-grid">
+      <img class="photo" src="christian-korwin.jpg" alt="Christian Korwin, Vertriebstrainer">
+      <div>
+        <h2>Christian <span class="hl">Korwin</span></h2>
+        <p style="margin-top:10px">Vertrieb ist mein Handwerk – vom ersten Cold Call bis zur Führung ganzer Vertriebsteams. Genau deshalb habe ich nach 15 Jahren im Vertrieb Korwin Advisory gegründet: um als Vertriebstrainer Verkäuferinnen und Verkäufern, Unternehmen und Selbstständigen zu helfen, ihren Umsatz, ihre Abschlussstärke und ihre Terminqualität messbar zu verbessern.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap">
+    <span class="kicker">Häufige Fragen</span>
+    <div class="faq-grid">
+      <div class="faq-card"><h3>Was kostet das?</h3><p>Nichts – wirklich kostenlos. Kein Abo, keine versteckten Kosten, kein Haken.</p></div>
+      <div class="faq-card"><h3>Bekomme ich Spam?</h3><p>Nein. Du bekommst das PDF und gelegentlich Sales-Impulse – Abmeldung jederzeit mit einem Klick.</p></div>
+      <div class="faq-card"><h3>Für wen ist das?</h3><p>Für alle, die im Vertrieb Termine gewinnen wollen – angestellt oder selbstständig, Einstieg oder Routine.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap foot-flex">
+    <div>© <span id="jahr">2026</span> Korwin Advisory · Christian Korwin</div>
+    <div>
+      <a href="impressum.html">Impressum</a> ·
+      <a href="datenschutz.html">Datenschutz</a> ·
+      <a href="https://korwin-advisory.ch">korwin-advisory.ch</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   KONFIGURATION — hier deine Formular-URL eintragen (siehe README)
+   ===================================================================== */
+document.getElementById('jahr').textContent = new Date().getFullYear();
+
+/* ---------- Formular ---------- */
+const form = document.getElementById('leadForm');
+const err  = document.getElementById('err');
+
+function zeigeFehler(text){ err.textContent = text; err.style.display = 'block'; }
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  err.style.display = 'none';
+
+  const email   = document.getElementById('email');
+  const consent = document.getElementById('consent');
+
+  if (!email.value || !email.checkValidity()) {
+    zeigeFehler('Bitte trage eine gültige E-Mail-Adresse ein.');
+    email.focus(); return;
+  }
+  if (!consent.checked) {
+    zeigeFehler('Bitte bestätige die Einwilligung, damit ich dir das PDF schicken darf.');
+    consent.focus(); return;
+  }
+
+  const btn = form.querySelector('button');
+  btn.disabled = true;
+  btn.textContent = 'Wird gesendet …';
+
+  form.submit();     // sendet die Adresse im Hintergrund an Brevo (unsichtbares iframe)
+  freischalten();    // zeigt den Danke-Bereich und startet den Download
+});
+
+function freischalten(){
+  document.getElementById('formCard').style.display = 'none';
+  const t = document.getElementById('thanks');
+  t.style.display = 'block';
+  t.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  document.getElementById('dlBtn').click();
+}
+
+/* ---------- Zahlen hochzählen ---------- */
+const reduziert = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const zahlen = document.querySelectorAll('[data-count]');
+
+if (reduziert) {
+  zahlen.forEach(el => el.textContent = el.dataset.count);
+} else {
+  const beobachter = new IntersectionObserver((eintraege, obs) => {
+    eintraege.forEach(eintrag => {
+      if (!eintrag.isIntersecting) return;
+      obs.unobserve(eintrag.target);
+      const ziel = parseInt(eintrag.target.dataset.count, 10);
+      const dauer = 1800;
+      const start = performance.now();
+      function schritt(jetzt){
+        const p = Math.min((jetzt - start) / dauer, 1);
+        const ease = 1 - Math.pow(1 - p, 3);          // ease-out
+        eintrag.target.textContent = Math.round(ziel * ease);
+        if (p < 1) requestAnimationFrame(schritt);
+      }
+      requestAnimationFrame(schritt);
+    });
+  }, { threshold: 0.4 });
+  zahlen.forEach(el => beobachter.observe(el));
+}
+</script>
+</body>
+</html>
