@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
+<html lang="de"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Impressum | Korwin Advisory</title>
 <meta name="robots" content="noindex, follow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
+@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;
+  src:url('fonts/anton-400.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 800;font-display:swap;
+  src:url('fonts/inter-var.woff2') format('woff2')}
 :root{--espresso:#211D18;--bernstein:#B8793A;--bernstein-tief:#A66C31;--offwhite:#F7F5F0;
 --creme:#F1EEE7;--body:#5E6570;--warmgrau:#9A9186;--haarlinie:#E6E1D6}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -28,9 +27,6 @@ font-size:19px;letter-spacing:.4px;margin:38px 0 10px}
 p,li{margin-bottom:12px;font-size:15.5px}
 ul{padding-left:20px}
 a{color:var(--bernstein-tief)}
-.hinweis{background:var(--creme);border:1px solid var(--haarlinie);border-left:3px solid var(--bernstein);
-border-radius:10px;padding:16px 18px;margin:26px 0;font-size:14px}
-.ph{background:#FDEBD8;border-radius:4px;padding:1px 6px;font-weight:700;color:#8A5620}
 footer{background:var(--espresso);color:var(--warmgrau);padding:36px 0;font-size:13px}
 footer a{color:var(--warmgrau)}
 footer a:hover{color:var(--bernstein)}
@@ -51,34 +47,33 @@ footer a:hover{color:var(--bernstein)}
     <span class="kicker">Rechtliches</span>
     <h1>Impressum</h1>
 
-    <div class="hinweis">
-      <strong>Vor Veröffentlichung ausfüllen:</strong> Alle <span class="ph">orange markierten Platzhalter</span> durch deine echten Angaben ersetzen und diesen Hinweiskasten löschen.
-    </div>
-
     <h2>Angaben zum Anbieter</h2>
     <p>
-      <span class="ph">Korwin Advisory [Rechtsform ergänzen, z. B. Einzelunternehmen / GmbH]</span><br>
+      Korwin Advisory (Einzelunternehmen)<br>
       Christian Korwin<br>
-      <span class="ph">[Strasse und Hausnummer]</span><br>
-      <span class="ph">[PLZ und Ort]</span><br>
+      Rütiweg 5<br>
+      6016 Hellbühl<br>
       Schweiz
     </p>
 
     <h2>Kontakt</h2>
     <p>
-      E-Mail: <span class="ph">[deine E-Mail-Adresse]</span><br>
-      Telefon: <span class="ph">[optional]</span><br>
+      E-Mail: <a href="mailto:office@korwin-advisory.ch">office@korwin-advisory.ch</a><br>
+      Telefon: <a href="tel:+41797125432">+41 79 712 54 32</a><br>
       Website: <a href="https://korwin-advisory.ch">korwin-advisory.ch</a>
     </p>
 
     <h2>Handelsregister &amp; Mehrwertsteuer</h2>
     <p>
-      UID: <span class="ph">[CHE-XXX.XXX.XXX — falls vorhanden, sonst Absatz löschen]</span><br>
-      Handelsregistereintrag: <span class="ph">[Kanton und Nummer — falls vorhanden, sonst löschen]</span>
+      Handelsregisteramt des Kantons Luzern<br>
+      UID / MWST-Nummer: CHE-162.825.168 MWST
     </p>
 
     <h2>Verantwortlich für den Inhalt</h2>
     <p>Christian Korwin, Anschrift wie oben.</p>
+
+    <h2>Streitbeilegung</h2>
+    <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Als Schweizer Unternehmen unterliegen wir zudem nicht der EU-Verordnung über Online-Streitbeilegung.</p>
 
     <h2>Haftungsausschluss</h2>
     <p>Die Inhalte dieser Website wurden mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen. Die bereitgestellten Materialien (z.&nbsp;B. Workbooks und Leitfäden) dienen der allgemeinen Information und Weiterbildung; sie stellen keine individuelle Beratung dar.</p>
@@ -98,5 +93,6 @@ footer a:hover{color:var(--bernstein)}
   </div>
 </footer>
 <script>document.getElementById('jahr').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+
+
+</body></html>

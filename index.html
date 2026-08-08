@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
+<html lang="de"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,11 +16,15 @@
 <meta property="og:url" content="https://korwinsalestraining.github.io/starterkit/">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,540&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-
 <style>
+@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;
+  src:url('fonts/anton-400.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 800;font-display:swap;
+  src:url('fonts/inter-var.woff2') format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:500 600;font-display:swap;
+  src:url('fonts/fraunces-var.woff2') format('woff2')}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:540;font-display:swap;
+  src:url('fonts/fraunces-italic-var.woff2') format('woff2')}
 :root{
   --espresso:#211D18; --bernstein:#B8793A; --bernstein-tief:#A66C31;
   --offwhite:#F7F5F0; --offwhite-warm:#F3EEE4; --creme:#F1EEE7;
@@ -200,18 +202,16 @@ footer a:hover{color:var(--bernstein)}
 
     <div>
       <div class="form-card" id="formCard">
-        <form id="leadForm" novalidate
-              action="https://32fe70f7.sibforms.com/serve/MUIFAFMjH9EFt7uvQuHN_3ruvELDjbK3jgyaHVrXtfGuRcN1yDVz1hr8hl7QxyRCLgDqQBv3EXTU-gtrSrPSz55IQobI4v9Ms9k2VWJMBHNZdnOmNDiljK7vOrirlcuVvaUoEMNH8q5HhLzWAbYR_oy1XDOMTMaIFeUp2lN1TSR0ZhfOSbYgeQzJn2JI2RSCddWYz22Ip61WWcNitQ=="
-              method="POST" target="brevoFrame">
+        <form id="leadForm" novalidate="" action="https://32fe70f7.sibforms.com/serve/MUIFAFMjH9EFt7uvQuHN_3ruvELDjbK3jgyaHVrXtfGuRcN1yDVz1hr8hl7QxyRCLgDqQBv3EXTU-gtrSrPSz55IQobI4v9Ms9k2VWJMBHNZdnOmNDiljK7vOrirlcuVvaUoEMNH8q5HhLzWAbYR_oy1XDOMTMaIFeUp2lN1TSR0ZhfOSbYgeQzJn2JI2RSCddWYz22Ip61WWcNitQ==" method="POST" target="brevoFrame">
           <label class="f" for="email">E-Mail-Adresse</label>
-          <input type="email" id="email" name="EMAIL" placeholder="deine@email.ch" required autocomplete="email">
+          <input type="email" id="email" name="EMAIL" placeholder="deine@email.ch" required="" autocomplete="email">
 
           <!-- Brevo-Spamschutz: bleibt leer und unsichtbar -->
           <input type="text" name="email_address_check" value="" style="display:none" tabindex="-1" aria-hidden="true">
           <input type="hidden" name="locale" value="de">
 
           <div class="consent">
-            <input type="checkbox" id="consent" name="OPT_IN" value="1" required>
+            <input type="checkbox" id="consent" name="OPT_IN" value="1" required="">
             <label for="consent">Ich möchte das Starterkit und weitere Sales-Impulse per E-Mail erhalten. Abmeldung jederzeit möglich. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</label>
           </div>
           <button type="submit" class="btn" style="width:100%;justify-content:center">Kostenloser Download</button>
@@ -223,7 +223,7 @@ footer a:hover{color:var(--bernstein)}
       <div class="thanks" id="thanks">
         <h2>Geschafft!</h2>
         <p>Dein Starterkit liegt bereit. Viel Erfolg beim nächsten Anruf.</p>
-        <a class="btn" id="dlBtn" href="Cold-Call-Starterkit_Korwin.pdf" download>PDF herunterladen</a>
+        <a class="btn" id="dlBtn" href="Cold-Call-Starterkit_Korwin.pdf" download="">PDF herunterladen</a>
         <div class="confirm-hint">
           <strong>📬 Noch ein Schritt:</strong> Ich habe dir gerade eine E-Mail geschickt — bestätige kurz deine Adresse (auch den Spam-Ordner checken). Dann bekommst du künftig auch meine besten Sales-Impulse direkt ins Postfach.
         </div>
@@ -354,5 +354,6 @@ if (reduziert) {
   zahlen.forEach(el => beobachter.observe(el));
 }
 </script>
-</body>
-</html>
+
+
+</body></html>
